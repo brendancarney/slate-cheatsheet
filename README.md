@@ -31,7 +31,17 @@ document.getParent(key)
 
 ## Misc
 
-## Multiple Editors on the Same Page
+### Check if a node is empty
+```
+node.text === ""
+```
+
+### Check if the current line is empty
+```
+editor.value.startBlock.text === ""
+```
+
+### Multiple Editors on the Same Page
 
 ```
 import { Value } from "slate"
