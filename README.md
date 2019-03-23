@@ -32,7 +32,7 @@ editor.moveToRangeOfDocument()
 const selection = editor.value.selection
 
 // Restore editor selection later on
-editor.change(change => change.select(selection))
+editor.select(selection)
 ```
 
 ### Analyzing
