@@ -26,7 +26,16 @@ editor.withoutNormalizing(() => {
 editor.moveToRangeOfDocument()
 ```
 
-### Analyzing 
+#### Save and Restore Selection
+```
+// Save selection before focusing on something else
+const selection = editor.value.selection
+
+// Restore editor selection later on
+editor.select(selection)
+```
+
+### Analyzing
 
 #### Basic
 
