@@ -48,7 +48,7 @@ const { key, offset, path } = editor.value.selection.focus
 
 ```
 const type = "paragraph"
-const isInType = editor.value.blocks(block => block.type === type)
+const isInType = editor.value.blocks.some(block => block.type === type)
 ```
 
 #### Selection is directly after an inline of a given type
