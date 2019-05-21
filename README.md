@@ -2,10 +2,18 @@
 
 A quick reference for common actions in a [SlateJS](https://docs.slatejs.org/) Editor.
 
-
 ## Commands
 
+### Reset Block on Enter
+
+You may want to use this when someone presses "Enter" after a block like a heading:
+
+```
+editor.splitBlock().setBlocks("paragraph")
+```
+
 ### Chaining
+
 To make a series of commands without being interrupted by normalization:
 
 ```
@@ -14,7 +22,6 @@ editor.withoutNormalizing(() => {
     editor.splitBlock().setBlocks({ type: "paragraph", data: {}})
 }
 ```
-
 
 ## Selection
 
@@ -27,6 +34,7 @@ editor.moveToRangeOfDocument()
 ```
 
 #### Save and Restore Selection
+
 ```
 // Save selection before focusing on something else
 const selection = editor.value.selection
@@ -103,11 +111,13 @@ onChange = (change) => {
 ```
 
 ### Check if a node is empty
+
 ```
 node.text === ""
 ```
 
 ### Check if the current line is empty
+
 ```
 editor.value.startBlock.text === ""
 ```
