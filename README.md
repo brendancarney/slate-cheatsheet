@@ -1,5 +1,7 @@
 # Slate Cheatsheet
 
+**Note: Slate recently released version 0.50. This document is not applicable to that or any later version**
+
 A quick reference for common actions in a [SlateJS](https://docs.slatejs.org/) Editor.
 
 ## Commands
